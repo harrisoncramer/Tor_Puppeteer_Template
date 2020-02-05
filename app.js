@@ -10,7 +10,7 @@ const getLinks = async (page) => {
     let links = makeArrayFromDocument("a")
       .filter(x => x.href.match(urlChecker)) // Get rid of non-links...
       .map(x => new URL(x.href)) // Turn into URLs..
-      .filter(x => x.host === "www.nationaljournal.com" && x.href !== window.location.href) // Where host is the same, but not entire URL.
+      .filter(x => x.host === new URL(window.location.href).host && x.href !== window.location.href) // Where host is the same, but not entire URL.
       .reduce((agg, item) => agg.some(x => x.href === item.href) ? agg : [ ...agg, item ], []); // Remove duplicates...
     return JSON.stringify(links);
   });
@@ -38,5 +38,5 @@ const scrape = async (url) => {
 
 };
 
-scrape('https://www.nationaljournal.com/dashboard');
+scrape('https://www.washingtonpost.com/graphics/2019/investigations/afghanistan-papers/documents-database/');
 

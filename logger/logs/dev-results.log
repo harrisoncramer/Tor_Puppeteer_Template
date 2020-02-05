@@ -1,123 +1,15 @@
-[Wed, Feb 5, 2020 11:22 AM][PID=11479][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 11:22 AM][PID=11479][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 11:23 AM][PID=11549][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 11:23 AM][PID=11549][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:10 PM][PID=11902][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:10 PM][PID=11902][[32minfo[39m]: Getting links...
-[Wed, Feb 5, 2020 12:10 PM][PID=11902][[31merror[39m]: There was an error with the bot: page.evaluate(...).filter is not a function - TypeError: page.evaluate(...).filter is not a function
-[Wed, Feb 5, 2020 12:10 PM][PID=11938][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:10 PM][PID=11938][[32minfo[39m]: Getting links...
-[Wed, Feb 5, 2020 12:10 PM][PID=11938][[32minfo[39m]: Browser closed.
-[Wed, Feb 5, 2020 12:11 PM][PID=11982][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:11 PM][PID=11982][[32minfo[39m]: Getting links...
-[Wed, Feb 5, 2020 12:11 PM][PID=11982][[32minfo[39m]: Browser closed.
-[Wed, Feb 5, 2020 12:12 PM][PID=12018][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:12 PM][PID=12018][[32minfo[39m]: Getting links...
-[Wed, Feb 5, 2020 12:12 PM][PID=12018][[32minfo[39m]: Browser closed.
-[Wed, Feb 5, 2020 12:12 PM][PID=12054][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:12 PM][PID=12054][[32minfo[39m]: Getting links...
-[Wed, Feb 5, 2020 12:12 PM][PID=12054][[32minfo[39m]: Browser closed.
-[Wed, Feb 5, 2020 12:13 PM][PID=12091][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:13 PM][PID=12091][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:14 PM][PID=12091][[32minfo[39m]: Browser closed.
-[Wed, Feb 5, 2020 12:14 PM][PID=12128][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:14 PM][PID=12128][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:14 PM][PID=12128][[32minfo[39m]: Browser closed.
-[Wed, Feb 5, 2020 12:15 PM][PID=12201][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:16 PM][PID=12201][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:16 PM][PID=12201][[31merror[39m]: There was an error with the bot: Execution context was destroyed, most likely because of a navigation. - Error: Execution context was destroyed, most likely because of a navigation.
-[Wed, Feb 5, 2020 12:16 PM][PID=12240][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:16 PM][PID=12240][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:18 PM][PID=12302][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:18 PM][PID=12302][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:18 PM][PID=12302][[32minfo[39m]: Browser closed.
-[Wed, Feb 5, 2020 12:19 PM][PID=12338][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:19 PM][PID=12338][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:21 PM][PID=12338][[32minfo[39m]: Browser closed.
-[Wed, Feb 5, 2020 12:23 PM][PID=12545][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:23 PM][PID=12545][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:25 PM][PID=12622][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:25 PM][PID=12622][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:27 PM][PID=12693][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:27 PM][PID=12693][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:31 PM][PID=12790][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:31 PM][PID=12790][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:31 PM][PID=12790][[31merror[39m]: There was an error with the bot: Evaluation failed: TypeError: Failed to construct 'URL': Invalid URL
-    at __puppeteer_evaluation_script__:2:58
-    at Array.map (<anonymous>)
-    at __puppeteer_evaluation_script__:2:49 - Error: Evaluation failed: TypeError: Failed to construct 'URL': Invalid URL
-    at __puppeteer_evaluation_script__:2:58
-    at Array.map (<anonymous>)
-    at __puppeteer_evaluation_script__:2:49
-[Wed, Feb 5, 2020 12:32 PM][PID=12818][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:32 PM][PID=12818][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:32 PM][PID=12818][[31merror[39m]: There was an error with the bot: Evaluation failed: TypeError: Failed to construct 'URL': Invalid URL
-    at __puppeteer_evaluation_script__:2:58
-    at Array.map (<anonymous>)
-    at __puppeteer_evaluation_script__:2:49 - Error: Evaluation failed: TypeError: Failed to construct 'URL': Invalid URL
-    at __puppeteer_evaluation_script__:2:58
-    at Array.map (<anonymous>)
-    at __puppeteer_evaluation_script__:2:49
-[Wed, Feb 5, 2020 12:33 PM][PID=12855][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:33 PM][PID=12855][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:33 PM][PID=12855][[32minfo[39m]: Browser closed.
-[Wed, Feb 5, 2020 12:33 PM][PID=12893][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:34 PM][PID=12893][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:35 PM][PID=12961][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:35 PM][PID=12961][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:35 PM][PID=12961][[31merror[39m]: There was an error with the bot: Evaluation failed: ReferenceError: url is not defined
-    at __puppeteer_evaluation_script__:4:71
-    at Array.filter (<anonymous>)
-    at __puppeteer_evaluation_script__:4:8 - Error: Evaluation failed: ReferenceError: url is not defined
-    at __puppeteer_evaluation_script__:4:71
-    at Array.filter (<anonymous>)
-    at __puppeteer_evaluation_script__:4:8
-[Wed, Feb 5, 2020 12:38 PM][PID=13108][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:38 PM][PID=13108][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:38 PM][PID=13108][[31merror[39m]: There was an error with the bot: url is not defined - ReferenceError: url is not defined
-[Wed, Feb 5, 2020 12:38 PM][PID=13147][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:38 PM][PID=13147][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:38 PM][PID=13147][[31merror[39m]: There was an error with the bot: Evaluation failed: ReferenceError: page is not defined
-    at __puppeteer_evaluation_script__:2:15 - Error: Evaluation failed: ReferenceError: page is not defined
-    at __puppeteer_evaluation_script__:2:15
-[Wed, Feb 5, 2020 12:42 PM][PID=13257][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:42 PM][PID=13257][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:46 PM][PID=13429][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:46 PM][PID=13429][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:46 PM][PID=13429][[31merror[39m]: There was an error with the bot: Unexpected token , in JSON at position 1 - SyntaxError: Unexpected token , in JSON at position 1
-[Wed, Feb 5, 2020 12:50 PM][PID=13523][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:50 PM][PID=13523][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 12:50 PM][PID=13523][[31merror[39m]: There was an error with the bot: Unexpected token o in JSON at position 1 - SyntaxError: Unexpected token o in JSON at position 1
-[Wed, Feb 5, 2020 12:50 PM][PID=13575][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 12:51 PM][PID=13575][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 1:02 PM][PID=14083][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 1:02 PM][PID=14083][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 1:02 PM][PID=14083][[31merror[39m]: There was an error with the bot: Evaluation failed: ReferenceError: urlChecker is not defined
-    at __puppeteer_evaluation_script__:3:28
-    at Array.filter (<anonymous>)
-    at __puppeteer_evaluation_script__:3:8 - Error: Evaluation failed: ReferenceError: urlChecker is not defined
-    at __puppeteer_evaluation_script__:3:28
-    at Array.filter (<anonymous>)
-    at __puppeteer_evaluation_script__:3:8
-[Wed, Feb 5, 2020 1:03 PM][PID=14131][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 1:03 PM][PID=14131][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 1:03 PM][PID=14131][[31merror[39m]: There was an error with the bot: Evaluation failed: TypeError: x.match is not a function
-    at __puppeteer_evaluation_script__:4:22
-    at Array.filter (<anonymous>)
-    at __puppeteer_evaluation_script__:4:8 - Error: Evaluation failed: TypeError: x.match is not a function
-    at __puppeteer_evaluation_script__:4:22
-    at Array.filter (<anonymous>)
-    at __puppeteer_evaluation_script__:4:8
-[Wed, Feb 5, 2020 1:03 PM][PID=14175][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 1:03 PM][PID=14175][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 1:03 PM][PID=14175][[31merror[39m]: There was an error with the bot: Unexpected token o in JSON at position 1 - SyntaxError: Unexpected token o in JSON at position 1
-[Wed, Feb 5, 2020 1:04 PM][PID=14232][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 1:04 PM][PID=14232][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 1:07 PM][PID=14314][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 1:07 PM][PID=14314][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 1:07 PM][PID=14314][[32minfo[39m]: Browser closed.
-[Wed, Feb 5, 2020 1:08 PM][PID=14350][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 1:08 PM][PID=14350][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 1:13 PM][PID=14452][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
-[Wed, Feb 5, 2020 1:13 PM][PID=14452][[32minfo[39m]: Performing work...
-[Wed, Feb 5, 2020 1:13 PM][PID=14452][[32minfo[39m]: Browser closed.
+[Wed, Feb 5, 2020 1:20 PM][PID=15408][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
+[Wed, Feb 5, 2020 1:20 PM][PID=15408][[32minfo[39m]: Performing work...
+[Wed, Feb 5, 2020 1:20 PM][PID=15408][[32minfo[39m]: Browser closed.
+[Wed, Feb 5, 2020 1:21 PM][PID=15453][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
+[Wed, Feb 5, 2020 1:21 PM][PID=15453][[32minfo[39m]: Performing work...
+[Wed, Feb 5, 2020 1:21 PM][PID=15453][[32minfo[39m]: Browser closed.
+[Wed, Feb 5, 2020 1:21 PM][PID=15497][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
+[Wed, Feb 5, 2020 1:21 PM][PID=15497][[32minfo[39m]: Performing work...
+[Wed, Feb 5, 2020 1:21 PM][PID=15497][[32minfo[39m]: Browser closed.
+[Wed, Feb 5, 2020 1:21 PM][PID=15525][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
+[Wed, Feb 5, 2020 1:21 PM][PID=15525][[32minfo[39m]: Performing work...
+[Wed, Feb 5, 2020 1:21 PM][PID=15525][[32minfo[39m]: Browser closed.
+[Wed, Feb 5, 2020 1:23 PM][PID=15596][[32minfo[39m]: Successfully connected to Tor with IP: 9050.
+[Wed, Feb 5, 2020 1:23 PM][PID=15596][[32minfo[39m]: Performing work...
+[Wed, Feb 5, 2020 1:23 PM][PID=15596][[32minfo[39m]: Browser closed.

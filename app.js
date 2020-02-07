@@ -1,55 +1,50 @@
 require('dotenv').config();
+const fs = require("fs-extra");
 const logger = require("./logger");
 const { setupPuppeteer, setPageBlockers, setPageScripts } = require("./setup");
-const { asyncForEach } = require("./util");
+const { getLinks } = require("./pageFunctions");
 
-const getLinks = async (page) => {
-  logger.info(`Performing work...`);
-  await setPageScripts(page);
-  let links = await page.evaluate(_ => {
-    let urlChecker = new RegExp("^(http://www.|https://www.|http://|https://)?[a-z0-9]+([-.]{1}[a-z0-9]+)*.[a-z]{2,5}(:[0-9]{1,5})?(/.*)?$");
-    let links = makeArrayFromDocument("a")
-      .filter(x => x.href.match(urlChecker)) // Get rid of non-links...
-      .map(x => {
-        let noHashNoQuery = x.href.split("#")[0].split("?")[0];
-        let cleanedUrlObject = new URL(noHashNoQuery);
-        return cleanedUrlObject;
-      }) // Turn into URLs..
-      .filter(x => !x.href.endsWith('pdf')) // Remove PDFs...
-      .filter(x => x.host === new URL(window.location.href).host && x.href !== window.location.href) // Where host is the same, but not entire URL...
-      .reduce((agg, item) => agg.some(x => x.href === item.href) ? agg : [ ...agg, item ], []); // Remove duplicates...
-    return JSON.stringify(links);
-  });
-  return links;
-};
+const cleanLink = (url) => url.split("?")[0];
 
-const round = async (round, links, page) => {
-  logger.info('Running round ' + round);
-  await asyncForEach(links, async (url) => {
-    await page.goto(url, 0);
-    let stringLinks = await getLinks(page);
-    links = [ ...links, ...JSON.parse(stringLinks) ].reduce((agg, item) => agg.some(x => x === item) ? agg : [ ...agg, item ], []);  
-  });
-  return links;
-};
+const scrape = async ({ url, limit }) => {
 
-const scrape = async (url) => {
   logger.info(`Running bot in ${process.env.NODE_ENV}`);
-  const { browser, page } = await setupPuppeteer();
 
-  try {
-    await setPageBlockers(page);
-    await page.goto(url, 0);
-    let stringLinks = await getLinks(page);
+  // Set up variables
+  let unscraped = new Set([ url ]);
+  let scraped = new Set();
+  const { browser, page } = await setupPuppeteer();
+  await setPageBlockers(page);
+
+  // While there are still unscraped links, scrape the first one in the set!
+  while(unscraped.size > 0){
+    if(unscraped.size > limit){
+      logger.info(`Unscraped size exceeds ${limit}-page limit.`); // Unless we have accumulated too many links.
+      [ ...unscraped ].forEach(link => scraped.add(link));
+      fs.writeFile(`${url}.json`, JSON.stringify([ ...scraped ]), function(err) {
+        if(err) return logger.error('There was an error writing the file', err);
+      });
+      break;
+    };
     
-    let links = JSON.parse(stringLinks);
-    links = await round(1, links, page);
-    links = await round(2, links, page);
-    console.log(`Links: ${links} \n\n Total Links ${links.length}`);
-  } catch (err) {
-    logger.error(`There was an error with the bot: `, err);
-    process.exit(1);
-  };
+    let url = [...unscraped][0]; // Get first item in the array.
+    unscraped = new Set([...unscraped].slice(1, unscraped.size)); // Remove it from the "unscraped" set.
+    
+    let originalLength = scraped.size;
+    scraped.add(url);
+    if(originalLength === scraped.size){ // If the two sets are the same size, it means the url was already in the scraped array, and we don't have to re-scrape it.
+      break;
+    }
+    await page.goto(url, 0);
+    await setPageScripts(page);
+    let links = JSON.parse(await getLinks(page));
+    links.forEach(link => unscraped.add(cleanLink(link)));
+    logger.info(`Found ${links.length} links on ${url}; Unscraped: ${unscraped.size}; Scraped: ${scraped.size};`);  
+  }
+
+  fs.writeFile('data.json', JSON.stringify([ ...unscraped, ...scraped ]), function(err) {
+    if(err) return logger.error('There was an error writing the file', err);
+  });
 
   await browser.close();
   logger.info(`Browser closed.`);
@@ -57,4 +52,4 @@ const scrape = async (url) => {
 
 };
 
-scrape('https://www.nationaljournal.com');
+scrape({ url: 'https://www.nationaljournal.com/dashboard', limit: 100 });

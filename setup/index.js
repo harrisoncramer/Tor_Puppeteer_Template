@@ -10,11 +10,11 @@ module.exports = {
     const isProduction = process.env.NODE_ENV === "production";
     let ports = process.env.TOR_PORTS.split(" "); // Enable Tor ports in .env file as string, separated by spaces...
     let portIndex = getRandom(0, ports.length - 1)();
-    let port = isProduction ? ports[portIndex] : '9050'; // Run Tor locally only on port 9050...
+    let port = '9050' // isProduction ? ports[portIndex] : '9050'; // Run Tor locally only on port 9050...
     const args =  ['--no-sandbox', '--proxy-server=socks5://127.0.0.1:' + port];
     const browser = await puppeteer.launch({
-      headless: isProduction,
-      devtools: !isProduction,
+      headless: true, // isProduction,
+      devtools: false, // !isProduction,
       args
     });
 
@@ -89,7 +89,7 @@ module.exports = {
   },
   setPageScripts: async page => {
     await page.addScriptTag({ path: "./setup/functions/index.js" });
-    await page.addScriptTag({ url: "https://code.jquery.com/jquery-3.4.1.slim.min.js" }); // Add jQuery...
+    // await page.addScriptTag({ url: "https://code.jquery.com/jquery-3.4.1.slim.min.js" }); // Add jQuery...
   }
   // https://fettblog.eu/scraping-with-puppeteer/ <–– Setup Page Response Handler...
 };
